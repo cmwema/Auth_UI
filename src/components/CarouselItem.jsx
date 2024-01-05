@@ -12,7 +12,7 @@ const CarouselItem = ({ item, width }) => {
           className="h-[500px] w-full"
           src={item.icon.default}
         />
-        <p className=" font-semibold text-xl text-black w-32">
+        <p className=" font-semibold text-xs md:text-xl text-black w-32">
           {item.description}
         </p>
       </div>
