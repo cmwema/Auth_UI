@@ -53,7 +53,7 @@ Open your browser and visit [http://localhost:3000](http://localhost:3000) to vi
 
 ## Deployment
 
-The project is hosted on Netlify for easy deployment. The live version can be accessed [here](https://65981f698ca97b1b9091f2fc--soft-mandazi-b0184b.netlify.app/).
+The project is hosted on Netlify for easy deployment. The live version can be accessed [here](https://659826317241e32190626cee--soft-mandazi-b0184b.netlify.app/).
 
 ## Technologies Used
 
