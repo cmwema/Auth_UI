@@ -4,7 +4,7 @@ import Login from "../components/Login/Login";
 
 function LogIn() {
   return (
-    <div className="grid grid-cols-2 w-full min-h-[100vh]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-[100vh]">
       <Carousel />
       <Login />
     </div>
