@@ -14,11 +14,13 @@ function LogIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
   };
+
   return (
-    <div className="flex flex-col items-center justify-between p-3">
-      <div className="bg-white flex flex-col gap-4 p-20 justify-center h-[80%]">
-        <div className="w-[500px] flex flex-col gap-4">
+    <div className="flex flex-1 flex-col items-center justify-between p-3">
+      <div className="bg-white flex flex-col gap-4 p-2 md:p-20 justify-center h-[80%]">
+        <div className="w-full max-w-[500px] flex flex-col gap-4">
           <form
             method="POST"
             action=""
@@ -34,21 +36,23 @@ function LogIn() {
             <input
               type="number"
               name="id"
+              id="id"
               placeholder="Enter ID number"
               className="rounded-l p-2 w-full rounded bg-gray-100 border-transparent focus:border-transparent focus:ring-0 focus:outline-none"
             />
 
-            <div className="flex items-center bg-gray-100 w-full justify-between rounded">
+            <div className="flex items-center p-2 bg-gray-100 w-full justify-between rounded">
               <input
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="rounded-l p-2 w-full rounded bg-gray-100 border-transparent focus:border-transparent focus:ring-0 focus:outline-none"
+                className="bg-gray-100 border-transparent focus:border-transparent focus:ring-0 focus:outline-none"
                 placeholder="Enter password"
               />
               <button
                 onClick={togglePasswordVisibility}
-                className="w-12 flex items-center justify-center focus:outline-none"
+                className="password-toggle-button"
+                aria-label={showPassword ? "Hide password" : "Show password"}
               >
                 {showPassword ? (
                   <FaEye className="text-gray-400" />
@@ -69,7 +73,7 @@ function LogIn() {
             <div className="flex items-center justify-center">
               <p className="text-gray-400 font-medium text-xl">or</p>
             </div>
-            <div className="flex gap-4 items-center justify-start">
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-start">
               <button className="flex gap-2 items-center justify-start border border-gray-300 rounded-lg p-4 text-md font-semibold">
                 <FcGoogle className="text-2xl" /> Sign in with Google
               </button>
@@ -82,12 +86,15 @@ function LogIn() {
 
           {/* forgot pass */}
           <div className="flex flex-col items-center justify-center gap-4 pt-4">
-            <a href="/" className="text-blue-600 hover:underline">
-              forgot password?
+            <a
+              href="/"
+              className="forgot-password-link text-blue-600 hover:underline"
+            >
+              Forgot password?
             </a>
             <p className="text-gray-400">
               Don't have an account?
-              <a href="/" className="px-2 hover:underline">
+              <a href="/" className="registration-link px-2 hover:underline">
                 Go to registration.
               </a>
             </p>

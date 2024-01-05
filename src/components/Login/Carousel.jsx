@@ -39,22 +39,22 @@ function Carousel() {
 
     return () => clearInterval(intervalId);
   }, [activeIndex]);
-
+ 
   return (
-    <div className="w-full h-full p-4 bg-gray-100">
+    <div className="w-full lg:w-[50vw] h-full p-2 md:p-4 bg-gray-100">
       <Header />
       <div className="flex items-center justify-center">
-        <div className="overflow-hidden w-full flex flex-col justify-center carousel">
+        <div className="w-full md:max-w-2xl overflow-hidden carousel-container">
           <div
             className="whitespace-nowrap transition-transform duration-300"
-            style={{ transform: `translate(-${activeIndex * 100}%)` }}
+            style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
-            {items.map((item) => (
-              <CarouselItem item={item} key={item.icon} width={"100%"} />
+            {items.map((item, index) => (
+              <CarouselItem item={item} key={index} width={"100%"} />
             ))}
           </div>
 
-          <div className="flex justify-center gap-2">
+          <div className="flex justify-center gap-2 mt-2">
             {items.map((item, index) => (
               <button
                 key={index}
@@ -65,13 +65,13 @@ function Carousel() {
                   updateIndex(index);
                 }}
               >
-                <button
+                <div
                   className={`rounded-full focus:outline-none ${
                     index === activeIndex
-                      ? "w-16 h-3 bg-[#FAD44F]"
+                      ? "w-14 h-4 bg-[#FAD44F]"
                       : "w-3 h-3 bg-gray-200"
                   }`}
-                ></button>
+                ></div>
               </button>
             ))}
           </div>
