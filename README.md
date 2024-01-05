@@ -3,6 +3,7 @@
 ## Project Overview
 
 **Description**: Auth_UI is a simple login page created using React and Tailwind CSS. The project is hosted on Netlify and features a carousel and a login form. It is built using Create React App for a quick and efficient development setup.
+![image](https://github.com/cmwema/auth_ui/assets/81985376/d94ff068-8f86-4377-a28f-bec3acd43c8d)
 
 ## Table of Contents
 
