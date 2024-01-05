@@ -53,7 +53,7 @@ Open your browser and visit [http://localhost:3000](http://localhost:3000) to vi
 
 ## Deployment
 
-The project is hosted on Netlify for easy deployment. The live version can be accessed [here](https://659826317241e32190626cee--soft-mandazi-b0184b.netlify.app/).
+The project is hosted on Netlify for easy deployment. The live version can be accessed [here](https://authui.netlify.app/).
 
 ## Technologies Used
 
