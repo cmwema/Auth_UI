@@ -41,7 +41,7 @@ function Carousel() {
   }, [activeIndex]);
  
   return (
-    <div className="w-full lg:w-[50vw] h-[100vh] p-2 md:p-4 bg-gray-100">
+    <div className="w-full lg:w-[50vw] h-max lg:h-[100vh] p-2 md:p-4 bg-gray-100">
       <Header />
       <div className="flex items-center justify-center">
         <div className="w-full md:max-w-2xl overflow-hidden carousel-container">
